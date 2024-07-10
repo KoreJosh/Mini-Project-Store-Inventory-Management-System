@@ -15,7 +15,6 @@ Sales Recording: Record and manage sales transactions, including quantity, price
 Financial Management: Keep detailed records of costs, markups, and profits.
 Customer Management: Store and update customer information, including names, gender, email, phone number, and location.
 Checkout Process: Handle the checkout process, apply discounts for existing customers, and update inventory quantities.
-Returns and Refunds: Manage returns and refunds efficiently.
 QR Code Generation: Generate and store QR codes for products with details including category, cost price, markup, quantity, and shelf location.
 
 ### Inventory Management
@@ -38,9 +37,10 @@ Display Inventory:
 - Enter product name and quantity.
 - Calculate total sales and update inventory.
 - Apply discounts for existing customers.
+  
 Customer Management
-Add/Update Customer Information:
-Enter customer details (name, gender, email, phone number, location).
+ Add/Update Customer Information:
+- Enter customer details (name, gender, email, phone number, location).
 
 # Predefined Containers
 First, we define our product categories and set up the necessary data structures to store inventory, customer details, and sales records.
@@ -70,6 +70,7 @@ We'll implement the core functionalities in a main function, invtManager, which 
 
 1. Inventory Initialization
 This function initializes the inventory management system, handles product input, and updates the inventory.
+
 Functionality Description
 This code block handles the initialization and management of the inventory system. It includes functions for generating QR codes, validating product details, and managing product categories and details. The process includes user prompts for input and updates to the inventory system.
 
@@ -268,6 +269,7 @@ This code block handles the checkout procedure in the inventory management syste
 
 3. Customer Management
 This function manages customer details by allowing new customer registration and searching for existing customers.
+
 Functionality Description
 This code block is responsible for entering and storing customer details. It collects customer information such as name, gender, email, phone number, and location. The data is then stored in a dictionary and converted into a DataFrame for further use.
 
@@ -322,11 +324,12 @@ This code block is responsible for entering and storing customer details. It col
             return cust_df
 
 
-5. Product Inventory Tracking
+4. Product Inventory Tracking
 Effective product inventory tracking is the backbone of any inventory management system. It ensures that store owners can maintain optimal stock levels, avoid overstocking or stockouts, and make informed decisions based on real-time inventory data. Let's dive into how we can implement this feature. This service as the heart of the Inventory management system.
 
 Inventory DataFrame
-The invtManager function using the checkout Process and Inventory Initialization data to compute the product, price, customer name, checkout time, InitiLal Product Quantity, product quantity after purchase, and updates the inventory.
+The invtManager function using the checkout Process and Inventory Initialization data to compute the product, price, customer name, checkout time, Initial Product Quantity, product quantity after purchase, and updates the inventory.
+
 Functionality Description
 This code block is responsible for displaying the current inventory status. It retrieves product details from the prdtInv dictionary, structures the data into a DataFrame using Pandas, and pivots the table for better readability. The function returns a pivot table of the inventory, displaying each product along with its attributes and values.
 
@@ -364,6 +367,7 @@ This code block is responsible for displaying the current inventory status. It r
 
 Inventory Search
 The invtManager function also supports searching products in the inventory based on various attributes. This functionality allows for quick access to product details and aids in decision-making.
+
 Functionality Description
 This code block is responsible for searching the inventory for a specific product. It merges product data from the product dictionary (prdDict) and inventory dictionary (prdtInv) into a DataFrame, and then allows users to search for a product by name. If the product is found, its details are displayed; otherwise, a message indicating that the product is not found is shown.
                 
@@ -403,7 +407,7 @@ The resultant output is displayed below.
         0    Milk  Dairies   50    1.50    0.20  2024-07-08 12:34:56           A1
 
 
-Conclusion
+# Conclusion
 Building an inventory management system requires careful planning and understanding of the store's operational needs. This project provides a solid foundation for managing store inventory, sales, and customer details using Python. The full code and additional details can be found in the [GitHub repository](https://github.com/KoreJosh/Mini-Project-Store-Inventory-Management-System/blob/main/Techtern%20Project%20%5BStore%20Inventory%20Management%5D.ipynb).
     
 
