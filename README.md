@@ -42,7 +42,7 @@ Customer Management
  Add/Update Customer Information:
 - Enter customer details (name, gender, email, phone number, location).
 
-# Predefined Containers
+### Predefined Containers
 First, we define our product categories and set up the necessary data structures to store inventory, customer details, and sales records.
 
     catSet = {'Dairies', 'Toiletries', 'Stationaries', 'Cereals', 'Pastries', 'Drinks'}
