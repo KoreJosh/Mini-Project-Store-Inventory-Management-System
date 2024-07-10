@@ -68,7 +68,7 @@ First, we define our product categories and set up the necessary data structures
 Functionality Implementation
 We'll implement the core functionalities in a main function, invtManager, which handles different modes: inventory management, checkout, customer management, and inventory search.
 
-1. Inventory Initialization
+### Inventory Initialization
 This function initializes the inventory management system, handles product input, and updates the inventory.
 
 Functionality Description
@@ -180,7 +180,8 @@ This code block handles the initialization and management of the inventory syste
                 print(f"Product '{prdtName}' has been added/updated in category '{prdtCat}' with shelf location '{shelfLocation}'.")
                 return
 
-2. Checkout Process
+
+### Checkout Process
 This function handles the checkout process by reducing inventory quantity, generating sales invoices, and applying discounts for existing customers.
 
 Functionality Description
@@ -267,7 +268,7 @@ This code block handles the checkout procedure in the inventory management syste
             return df   
 
 
-3. Customer Management
+### Customer Management
 This function manages customer details by allowing new customer registration and searching for existing customers.
 
 Functionality Description
@@ -324,7 +325,7 @@ This code block is responsible for entering and storing customer details. It col
             return cust_df
 
 
-4. Product Inventory Tracking
+### Product Inventory Tracking
 Effective product inventory tracking is the backbone of any inventory management system. It ensures that store owners can maintain optimal stock levels, avoid overstocking or stockouts, and make informed decisions based on real-time inventory data. Let's dive into how we can implement this feature. This service as the heart of the Inventory management system.
 
 Inventory DataFrame
@@ -365,7 +366,7 @@ This code block is responsible for displaying the current inventory status. It r
                 return pivot_df
 
 
-Inventory Search
+### Inventory Search
 The invtManager function also supports searching products in the inventory based on various attributes. This functionality allows for quick access to product details and aids in decision-making.
 
 Functionality Description
